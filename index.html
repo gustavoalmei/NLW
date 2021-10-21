@@ -28,23 +28,23 @@
           gustavoczz
         </a>
         <p>An student focused on learnig programming for web</p>
-        <ul>
-          <li>
+        <ul id="SocialMedia">
+          <li class="youtube">
             <a href="https://www.youtube.com/" target="_blank">
               <img src="images/youtube.svg" alt="Ícone do youtube" />
             </a>
           </li>
-          <li>
+          <li class="instagram">
             <a href="https://www.instagram.com/gustavoczz/" target="_blank">
               <img src="images/instagram.svg" alt="Ícone do instagram" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a href="https://www.facebook.com/" target="_blank">
               <img src="images/facebook.svg" alt="Ícone do facebook" />
             </a>
           </li>
-          <li>
+          <li class="twitter">
             <a href="https://twitter.com/gustavoczz" target="_blank">
               <img src="images/twitter.svg" alt="Ícone do twitter" />
             </a>
@@ -52,5 +52,21 @@
         </ul>
       </div>
     </main>
+
+    <script>
+      const linkSocialMedia = {
+       youtube:"maykbrito",
+       github:"maykbrito",
+       facebook:"maykbrito",
+       instagram:"maykbrito",
+       twitter:"maykbrito"
+      }
+
+      for(let li of SocialMedia.children){
+        const social = li.getAttribute('class')
+        li.children[0].href = `https://${social}.com/${linkSocialMedia[social]}`
+        alert(li.children[0].href)
+      }
+    </script>
   </body>
 </html>
