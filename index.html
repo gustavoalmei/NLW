@@ -20,14 +20,14 @@
           <span>
             <img src="images/build.svg" alt="Selo circular branco Rocketseat" />
           </span>
-          <img src="images/perfil.jpg" alt="Foto de perfil" />
+          <img id = "avatarUser" src="images/perfil.jpg" alt="Foto de perfil" />
         </div>
-        <h1>Gustavo Almeida</h1>
-        <a href="https://github.com/gustavoalmei" target="_blank">
+        <h1 id="userName">Gustavo Almeida</h1>
+        <a id="perfilGitHub" href="https://github.com/gustavoalmei" target="_blank">
           <img src="images/github.svg" alt="Ícone github" />
-          gustavoczz
+          <span id="userLogin">Gustavo Almeida</span>
         </a>
-        <p>An student focused on learnig programming for web</p>
+        <p id="bioUser">An student focused on learnig programming for web</p>
         <ul id="SocialMedia">
           <li class="youtube">
             <a href="https://www.youtube.com/" target="_blank">
@@ -53,20 +53,6 @@
       </div>
     </main>
 
-    <script>
-      const linkSocialMedia = {
-       youtube:"maykbrito",
-       github:"maykbrito",
-       facebook:"maykbrito",
-       instagram:"maykbrito",
-       twitter:"maykbrito"
-      }
-
-      for(let li of SocialMedia.children){
-        const social = li.getAttribute('class')
-        li.children[0].href = `https://${social}.com/${linkSocialMedia[social]}`
-        alert(li.children[0].href)
-      }
-    </script>
+    <script src="/main.js"></script>
   </body>
 </html>
