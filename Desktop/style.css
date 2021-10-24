@@ -14,21 +14,23 @@ body {
   --gray: #e1e1e6;
   --Text: #c4c4cc;
   display: grid;
-  place-items: center;
+  justify-content: center;
+  top: 100px;
   -webkit-font-smoothing: antialiased; /* fica um pouco mais suave*/
   background-color: #121214;
+  overflow: hidden;
 }
 
 main {
   width: 375px;
   height: 540px;
-  background-image: url(/images/background.svg);
+  background-image: url(/images/mask-desktop.svg);
   background-position: center;
-  background-color: #202024;
+  background-color: hsla(240, 6%, 13%, 0.5);
   position: relative;
 }
 
-.quebra{
+.quebra {
   width: 100px;
   height: 10px;
   background-color: black;
@@ -37,10 +39,11 @@ main {
   position: relative;
 }
 
-.faixa{
+.faixa {
   width: 50px;
-  height: 100px;
-  background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);  position: absolute;
+  height: 120px;
+  background: linear-gradient(161.24deg, #00ff15 -15.25%, #f7f7f7 111.89%);
+  position: absolute;
   left: 25px;
   bottom: 5px;
   border: 1px solid #000000;
@@ -55,12 +58,12 @@ main {
   color: var(--gray);
 }
 
-h1{
+h1 {
   margin-top: 24px;
   margin-bottom: 4px;
 }
 
-p{
+p {
   font-size: 14px;
   font-weight: 400;
   margin-top: 32px;
@@ -86,6 +89,19 @@ p{
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
+.avatar span img {
+  animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 h1 {
   font-size: 2em;
 }
@@ -99,9 +115,22 @@ a {
   gap: 12px;
 }
 
-ul{
+ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 8px;
+}
+
+#SocialMedia img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+@media (min-width: 720px) {
+
+}
+
+@media (min-width: 960px) {
+
 }
