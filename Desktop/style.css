@@ -24,7 +24,7 @@ body {
 main {
   width: 375px;
   height: 540px;
-  background-image: url(/images/mask-desktop.svg);
+  background-image: url(../images/mask-desktop.svg);
   background-position: center;
   background-color: hsla(240, 6%, 13%, 0.5);
   position: relative;
